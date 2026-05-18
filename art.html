@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Искусство — Космос в искусстве</title>
+  <meta name="description" content="Раздел «Искусство»: как достижения космонавтики вдохновляли художников, кино и дизайн эпохи." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <div class="frame" aria-label="Мокап веб-страницы">
+    <header class="topbar">
+      <div class="topbar__inner">
+        <div class="logo" aria-label="Логотип">
+          <svg class="logo__rocket" viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <defs>
+              <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#FFD36B"/>
+                <stop offset="0.45" stop-color="#F7B733"/>
+                <stop offset="1" stop-color="#B7791F"/>
+              </linearGradient>
+              <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="2.2" result="blur" />
+                <feColorMatrix in="blur" type="matrix"
+                  values="1 0 0 0 0
+                          0 1 0 0 0
+                          0 0 1 0 0
+                          0 0 0 0.9 0" result="colored"/>
+                <feMerge>
+                  <feMergeNode in="colored"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+            <path filter="url(#glow)" fill="url(#gGold)" d="M32 4c8 6 14 17 16 28-5 5-10 8-16 9-6-1-11-4-16-9C18 21 24 10 32 4z"/>
+            <path fill="#B7791F" d="M22 33c4 3 7 5 10 6 3-1 6-3 10-6-1 8-5 15-10 23-5-8-9-15-10-23z" opacity="0.95"/>
+            <path fill="#FFD36B" d="M32 17c3 5 5 10 6 15-2 2-4 3-6 3s-4-1-6-3c1-5 3-10 6-15z"/>
+            <circle cx="32" cy="27" r="2.3" fill="#FFF0C2" opacity="0.95"/>
+            <path fill="url(#gGold)" d="M32 38l0 22c-2-2-5-6-6-10 2-4 4-7 6-12z" opacity="0.9"/>
+            <path fill="url(#gGold)" d="M32 38l0 22c2-2 5-6 6-10-2-4-4-7-6-12z" opacity="0.9"/>
+          </svg>
+          <span class="logo__text">Космос в искусстве</span>
+        </div>
+
+        <button class="topbar__burger" type="button" aria-label="Открыть меню" aria-controls="site-nav" aria-expanded="false">
+          <span class="topbar__burger-lines" aria-hidden="true"></span>
+        </button>
+
+        <nav id="site-nav" class="nav" aria-label="Главное меню">
+          <a class="nav__link" href="index.html">Главная</a>
+          <a class="nav__link" href="history.html">История</a>
+          <a class="nav__link is-active" href="art.html">Искусство</a>
+          <a class="nav__link" href="chronology.html">Хронология</a>
+
+          <a class="nav__link" href="#school-museum">Школьный музей</a>
+        </nav>
+
+
+        <div class="topbar__cta">
+          <a class="btn btn--gold" href="index.html#school-museum">Посетить музей</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="main">
+      <section class="hero" aria-label="Заголовок страницы">
+        <div class="hero__overlay" aria-hidden="true">
+          <div class="hero__overlay-inner">
+            <div class="hero__overlay-title">Космос в искусстве</div>
+            <div class="hero__overlay-subtitle">Как научные прорывы превращались в образы, сюжеты и новые визуальные языки.</div>
+          </div>
+        </div>
+
+        <div class="hero__bg" aria-hidden="true">
+          <div class="stars" />
+          <div class="nebula nebula--a" />
+          <div class="nebula nebula--b" />
+        </div>
+
+        <div class="hero__content">
+          <div class="hero__left">
+            <div class="kicker">Раздел • Искусство</div>
+            <h1 class="hero__title">
+              <span class="hero__title-main">Искусство</span>
+              <span class="hero__title-sub">космических идей</span>
+              <span class="hero__title-sub hero__title-sub--gold">в эпохах</span>
+            </h1>
+            <p class="hero__subtitle">Небольшой обзор ключевых мотивов: плакаты, кино, живопись и дизайн.</p>
+
+            <div class="hero__actions">
+              <a class="btn btn--orange btn--xl" href="index.html#art">К содержанию на главной</a>
+              <a class="btn btn--ghost btn--xl" href="index.html#timeline">К хронологии</a>
+            </div>
+          </div>
+
+          <div class="hero__right" aria-hidden="true">
+            <div class="space-scene">
+              <div class="earth">
+                <div class="earth__glow"></div>
+                <div class="earth__surface"></div>
+                <div class="earth__atmo"></div>
+                <div class="earth__clouds"></div>
+              </div>
+
+              <svg class="iss" viewBox="0 0 720 360" preserveAspectRatio="xMidYMid meet">
+                <defs>
+                  <linearGradient id="issG" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0" stop-color="#EAEFF7" stop-opacity="0.95"/>
+                    <stop offset="0.5" stop-color="#7AA7FF" stop-opacity="0.8"/>
+                    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.95"/>
+                  </linearGradient>
+                  <filter id="issGlow" x="-30%" y="-30%" width="160%" height="160%">
+                    <feGaussianBlur stdDeviation="2.2" result="b"/>
+                    <feMerge>
+                      <feMergeNode in="b"/>
+                      <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                  </filter>
+                </defs>
+
+                <g filter="url(#issGlow)" opacity="0.95">
+                  <path d="M330 192 L520 156" stroke="url(#issG)" stroke-width="8" stroke-linecap="round" fill="none"/>
+                  <path d="M350 222 L560 186" stroke="url(#issG)" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+                  <path d="M220 238 L510 160" stroke="#BFD8FF" stroke-width="2" opacity="0.7" fill="none"/>
+                  <path d="M235 262 L540 174" stroke="#A9C8FF" stroke-width="2" opacity="0.65" fill="none"/>
+
+                  <g opacity="0.95">
+                    <path d="M520 156 L625 126" stroke="#CDE2FF" stroke-width="6" stroke-linecap="round"/>
+                    <path d="M512 176 L642 146" stroke="#CDE2FF" stroke-width="2" opacity="0.6"/>
+                    <g fill="#D7ECFF" opacity="0.55">
+                      <rect x="584" y="140" width="14" height="36" rx="4" />
+                      <rect x="604" y="135" width="14" height="36" rx="4" />
+                      <rect x="624" y="130" width="14" height="36" rx="4" />
+                    </g>
+                  </g>
+
+                  <path d="M280 210 C305 198 345 190 390 183" stroke="url(#issG)" stroke-width="10" stroke-linecap="round" fill="none"/>
+                  <rect x="318" y="194" width="82" height="46" rx="18" fill="#EAF2FF" opacity="0.25"/>
+                  <rect x="338" y="204" width="50" height="22" rx="10" fill="#7AA7FF" opacity="0.45"/>
+
+                  <g fill="#CBE2FF" opacity="0.7">
+                    <circle cx="350" cy="213" r="4"/>
+                    <circle cx="366" cy="208" r="4"/>
+                    <circle cx="382" cy="204" r="4"/>
+                  </g>
+                </g>
+              </svg>
+
+              <div class="orbit"></div>
+              <div class="comet"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cards" aria-label="Искусство">
+        <article class="card" id="art-main">
+          <div class="card__icon" aria-hidden="true">✦</div>
+          <h2 class="card__title">Плакаты, обложки и афиши</h2>
+          <p class="card__text">От «первого сигнала» к привычным орбитам: космос научил плакаты быть точными, графичными и узнаваемыми. Геометрия ракет превратилась в стиль — а заголовки и эмблемы стали «космическими логотипами» эпохи.</p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">⟡</div>
+          <h2 class="card__title">Кино и спецэффекты эпох</h2>
+          <p class="card__text">Первые экраны мечтали о невесомости, но потом реальность подсказала режиссёрам новый язык: реальные траектории, характерные формы станций и детали приборов стали материалом для фантазии.</p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">⌁</div>
+          <h2 class="card__title">Дизайн и технологическая эстетика</h2>
+          <p class="card__text">Технологии дали дизайну структуру: шкалы, метки, «инфографический» темп. Даже в интерфейсах и постерах появились элементы, похожие на командные панели и навигационные схемы.</p>
+        </article>
+      </section>
+
+      <section class="section-spacer" aria-label="Фрагменты искусства" style="max-width:92%; margin:-10px auto 0; padding-bottom:38px;">
+        <div class="gallery-hint">
+          <div class="gallery-hint__title">Как космос отражается в искусстве</div>
+          <div class="gallery-hint__sub">
+            <p style="margin:0 0 14px; font-weight:650; line-height:1.7; color: rgba(234,242,255,.80);">
+              Космос редко показывают просто «как планету». Обычно это <b>способ говорить</b>: через кадр, форму, свет и звук. Ниже — несколько примеров отражения космоса в искусстве.
+            </p>
+
+            <div style="display:grid; grid-template-columns: repeat(2, 1fr); gap:16px; margin-top:18px;">
+              <figure style="margin:0; border:1px solid rgba(255,211,107,.14); border-radius:18px; padding:12px; background:rgba(255,255,255,.02);">
+                <div style="height:440px; border-radius:0px; overflow:hidden; border:1px solid rgba(255,211,107,.10);">
+                  <img src="images/art-orbit.jpg" alt="Орбита мысли" style="width:100%; height:100%; object-fit:contain; background:rgba(255,255,255,.02); display:block;" />
+                </div>
+                <figcaption style="margin-top:10px; color: rgba(234,242,255,.78); font-weight:650; line-height:1.55;">
+                  Картина Язэпа Дроздовича из альбома "Космовизия", 1947 год
+                </figcaption>
+              </figure>
+
+              <figure style="margin:0; border:1px solid rgba(255,211,107,.14); border-radius:18px; padding:12px; background:rgba(255,255,255,.02);">
+                <div style="height:440px; border-radius:0px; overflow:hidden; border:1px solid rgba(255,211,107,.10);">
+                  <img src="images/art-station-light.jpg" alt="Свет станции" style="width:100%; height:100%; object-fit:cover; display:block;" />
+                </div>
+                <figcaption style="margin-top:10px; color: rgba(234,242,255,.78); font-weight:650; line-height:1.55;">
+                  Картина Алексея Леонова .
+                </figcaption>
+              </figure>
+
+              <figure style="margin:0; border:1px solid rgba(255,211,107,.14); border-radius:18px; padding:12px; background:rgba(255,255,255,.02);">
+                <div style="height:440px; border-radius:0px; overflow:hidden; border:1px solid rgba(255,211,107,.10);">
+                  <img src="images/art-earth-map.jpg" alt="Карта Земли" style="width:100%; height:100%; object-fit:cover; display:block;" />
+                </div>
+                <figcaption style="margin-top:10px; color: rgba(234,242,255,.78); font-weight:650; line-height:1.55;">
+                  Визуальный приём: фрагменты реальной Земли превращаются в композицию (тепловые карты, снимки, контуры).
+                </figcaption>
+              </figure>
+
+              <figure style="margin:0; border:1px solid rgba(255,211,107,.14); border-radius:18px; padding:12px; background:rgba(255,255,255,.02);">
+                <div style="height:440px; border-radius:0px; overflow:hidden; border:1px solid rgba(255,211,107,.10);">
+                  <img src="images/art-commands-sound.jpg" alt="Команда и звук" style="width:100%; height:100%; object-fit:cover; display:block;" />
+                </div>
+                <figcaption style="margin-top:10px; color: rgba(234,242,255,.78); font-weight:650; line-height:1.55;">
+                  Визуальный приём: субтитры, таймкоды и «шум эфира» как часть стиля.
+                </figcaption>
+              </figure>
+            </div>
+
+            <div style="margin-top:22px; border-radius:22px; padding:22px; border:1px dashed rgba(255,211,107,.22); background:rgba(255,255,255,.02);">
+              <div style="font-weight:950; font-size:18px; margin-bottom:10px; color:#fff;">Белорусские художники и космос</div>
+              <div style="color: rgba(234,242,255,.78); font-weight:650; line-height:1.7;">
+                1. Язэп Дроздович и альбом «Космовизия» (1947 год).      
+                 Язэп Дроздович — одна из 
+наиболее значимых фигур белорусского культурного возрождения XX века. Он был не только художником, но и писателем, этнографом, археологом, философом, а также астрономом-любителем. Тема космоса стала важнейшим лейтмотивом его творчества, и именно он заложил основы космического направления в белорусском изобразительном искусстве.
+
+Творчество Дроздовича неразрывно связано с идеями космизма — философского течения, рассматривающего Вселенную как единое целое. Он воспринимал космическое пространство как среду, наполненную жизнью. Художник совершал свои «астральные путешествия» во сне, где переносился на другие планеты, видел их пейзажи, флору и фауну, а также наблюдал за жизнью их обитателей. Эти видения он затем тщательно фиксировал в своих работах.
+
+В 1947 году Дроздович создал альбом «Космовизия». Эта работа представляет собой одно из наиболее полных воплощений его космических идей. В альбом вошли изображения инопланетных ландшафтов, городов и существ, существующих, по убеждению художника, на других планетах. Например, в альбоме были работы с такими названиями, как «Встреча весны на Сатурне», «Природа Луны», «Осушенный цирк» и другие. Свои космические серии Дроздович создавал, будучи уверенным, что обладает даром ясновидения, а его «путешествия» имеют не только художественную, но и научную ценность. Исполненные с филигранной точностью, работы Дроздовича отличает детализация и декоративность. До него никто не изображал космос с такой степенью реализма и фантазии одновременно.
+
+2. Алексей Леонов и картина «На спутнике Юпитера» (1973 год)                                          
+
+Если Язэп Дроздович видел космос в своих «астральных путешествиях», то Алексей Леонов смог лично увидеть Вселенную из космоса, став первым в мире человеком, вышедшим в открытый космос в 1965 году. При этом Леонов был не только космонавтом, но и талантливым художником. За свою жизнь он создал более двухсот картин, многие из которых были написаны по свежим впечатлениям от полетов, а основой для них служили этюды, сделанные на борту космических станций.
+
+Творчество Леонова — это уникальный сплав реальных ощущений космонавта и художественного вымысла. В 1973 году, готовясь к историческому советско-американскому полету «Союз — Аполлон», он создал эскиз картины «На спутнике Юпитера». Картина была выполнена в соавторстве с известным художником-фантастом Андреем Соколовым.
+
+Композиция работы разворачивается на фоне массивного диска Юпитера. Согласно описанию репродукции, картина выдержана в черно-фиолетовых тонах. На переднем плане изображена пересеченная, рельефная поверхность спутника, по которой движется космический аппарат. Сам Юпитер выглядит как огромное оранжево-полосатое светило, висящее прямо над горизонтом. Примечательно, что для создания образа американского космического корабля «Аполлон» Леонов использовал его модель и фотографии, стремясь к максимальной достоверности изображения. Позднее, в 1974 году, Леонов завершил работу над финальной версией картины (размером 80 на 160 см), которая символизирует новую эру международного сотрудничества в космосе.
+              </div>
+            </div>
+
+           
+
+
+            
+          </div>
+        </div>
+      </section>
+
+  </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
